@@ -1,0 +1,17 @@
+set relativenumber
+
+inoremap jk <ESC>
+inoremap Jk <ESC>
+inoremap jK <ESC>
+inoremap JK <ESC>
+
+let mapleader = " "
+map <leader><leader> :action GotoFile<CR>
+map <leader>rr :action RenameElement<CR>
+map <leader>fr :action RecentFiles<CR>
+map <leader>op :action ActivateProjectToolWindow<CR>
+map <leader>cc :action BuildSolutionAction<CR>
+map <leader>cr :action Debug<CR>
+map <leader>cC :action RebuildSolutionAction<CR>
+map <leader>sw :action EditorToggleShowWhitespaces<CR>
+map <leader>sr :set relativenumber!<CR>
