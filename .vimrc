@@ -1,21 +1,18 @@
-call plug#begin('C:/Users/bis1p/plugged')
-Plug 'dracula/vim', {'as': 'dracula'}
-Plug 'rust-lang/rust.vim'
-
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdtree'
-call plug#end()
-
-colorscheme dracula
-
 set relativenumber
-map <C-\> :set relativenumber!<CR>
 
-inoremap jk <ESC>
-inoremap Jk <ESC>
-inoremap jK <ESC>
-inoremap JK <ESC>
+inoremap jj <ESC>
+inoremap Jj <ESC>
+inoremap jJ <ESC>
+inoremap JJ <ESC>
 
 let mapleader = " "
-map <leader>pt :NERDTreeToggle<CR>
-let NERDTreeMapActivateNode='l'
+map <leader><leader> :vsc VAssistX.OpenFileInSolutionDialog<CR>
+map <leader>rr :vsc Refactor.Rename<CR>
+map <leader>or :vsc Edit.GotoRecentFile<CR>
+map <leader>se :vsc View.SolutionExplorer<CR>
+map <leader>pc :vsc Build.BuildSolution<CR>
+map <leader>pd :vsc Debug.Start<CR>
+map <leader>pC :vsc Build.RebuildSolution<CR>
+map <leader>sw :set relativenumber!<CR>
+
+nmap gd :vsc VAssistX.GotoImplementation<CR>
