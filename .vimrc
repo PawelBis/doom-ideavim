@@ -15,6 +15,8 @@ map <leader>pd :vsc Debug.Start<CR>
 map <leader>pC :vsc Build.RebuildSolution<CR>
 map <leader>sw :set relativenumber!<CR>
 map <leader>th :vsc EditorContextMenus.CodeWindow.ToggleHeaderCodeFile<CR>
+map <leader>cc "+y
+map <leader>cp "+p
 
 " UE4 CodeSnippets
 map <leader>sd iGEngine->AddOnScreenDebugMessage(1, 5.f, FColor::Red, TEXT(""));<ESC>4ha
