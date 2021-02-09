@@ -17,7 +17,7 @@ map <leader>sw :set relativenumber!<CR>
 map <leader>th :vsc EditorContextMenus.CodeWindow.ToggleHeaderCodeFile<CR>
 
 " UE4 CodeSnippets
-map <leader>sd iGEngine->AddOnScreenDebugMessage(1, 5.f, FColor::Red, TEXT(""));<ESC>4ha
+map <leader>sd iif(GEngine) {<CR>GEngine->AddOnScreenDebugMessage(1, 5.f, FColor::Red, TEXT(""));<CR>}<ESC>kf"a
 map <leader>sl iUE_LOG(LogTemp, Warning, TEXT(""));<ESC>4ha
 
 nmap gd :vsc VAssistX.GotoImplementation<CR>
