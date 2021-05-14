@@ -13,13 +13,14 @@ map <leader>se :vsc View.SolutionExplorer<CR>
 map <leader>pc :vsc UnrealVS.BuildStartupProject<CR>
 map <leader>pd :vsc Debug.Start<CR>
 map <leader>pC :vsc Build.RebuildSolution<CR>
-map <leader>sw :set relativenumber!<CR>
+map <leader>sr :set relativenumber!<CR>
+map <leader>sw :set Edit.ViewWhiteSpace<CR>
 map <leader>th :vsc EditorContextMenus.CodeWindow.ToggleHeaderCodeFile<CR>
 map <leader>cc "+y
 map <leader>cp "+p
 
 " UE4 CodeSnippets
-map <leader>sd iif(GEngine) {<CR>GEngine->AddOnScreenDebugMessage(1, 5.f, FColor::Red, TEXT(""));<CR>}<ESC>kf"a
+map <leader>sd iGEngine->AddOnScreenDebugMessage(1, 5.f, FColor::Red, TEXT(""));<ESC>4ha
 map <leader>sl iUE_LOG(LogTemp, Warning, TEXT(""));<ESC>4ha
 
 nmap gd :vsc VAssistX.GotoImplementation<CR>
